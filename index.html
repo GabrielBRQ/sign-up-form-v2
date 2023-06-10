@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="background" src="img/kevin-laminto-7PqRZK6rbaE-unsplash.jpg" alt="sphere background image">
+    <div class="container">
+        <div>
+            <img class="logo" src="img/LogoV2.png" alt="Bereq logo">
+        </div>
+        <div class="form">
+            <p class="title">Sign up</p>
+            <form action='' method='get' id="create">
+                <div class="input">
+                    <label for='username'><img class="icon" src="img/icons/user.png" alt="user logo"></label>
+                    <input id='email' name='email' type='text' required/>
+                </div>
+                <div class="input">
+                    <label for='email'><img class="icon" src="img/icons/envelope.png" alt="email logo"></label>
+                    <input id='email'
+                        name='email'
+                        type='email'
+                        required/>
+                </div>
+                <div class="input">
+                    <label for="pwd"><img class="icon" src="img/icons/padlock.png" alt="password logo"></label>
+                    <input type="password" id="pwd" name="pwd" required>
+                </div>
+                <div class="input">
+                    <label for="confirmpwd"><img class="icon" src="img/icons/padlock.png" alt="password logo"></label>
+                    <input type="password" id="confirmpwd" name="confirmpwd" required onkeyup='check()'>
+                </div>
+                <p class="details">By signing up, you are agreeing to our <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></p>
+                <div class="submit">
+                    <button id="button" class="myButton" type="submit" form="create" value="Submit" id="button">Submit</button>
+                    <p class="details">Already have an account? <a class="login" href="">Log in</a></p>
+                </div>
+            </form>
+            <script src="script.js">  </script>
+        </div>
+    </div>
+</body>
+</html>

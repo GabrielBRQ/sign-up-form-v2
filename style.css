@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: white;
+}
+
+.background{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container,
+.logo,
+.form{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.logo{
+    width: 450px;
+    height: 450px;
+}
+
+.container > .form{
+    left: 0;
+    opacity: 100%;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 85vh;
+    width: 70vw;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: transform 200ms ease-in-out;
+    padding: 6px;
+}
+
+.details{
+    width: 20vw;
+    font-size: .8rem;
+    padding: 10px 0 15px 0;
+}
+
+
+
+.icon{
+    margin-right: 10px;
+    height: 23px;
+    width: 23px;
+}
+
+input {
+    border: 1px solid rgba(187, 187, 224, 0.5);
+    background-color: rgba(187, 187, 224, 0);
+    border-radius: 5px;
+    height: 20px;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+    border-color: #862e97;
+}
+
+
+.myButton {
+    background-color: rgba(150, 65, 204, 0);
+    color: rgb(172,65,204);
+    padding: 10px 24px 10px 24px;
+    border-style: none;
+    border: 1px solid rgb(172,65,204);
+    border-radius: 5px;
+    width: 100%;
+    opacity: 70%;
+    transition: all 0.3s;
+}
+    
+.myButton:hover {
+    background: rgb(163, 65, 255);
+    border-color: rgb(163, 65, 255);
+    transform: translateY(-3px);
+    color: white;
+}
+
+.myButton:active {
+    box-shadow: 0 2px #141414;
+    
+}
+
+a:link,
+a:visited {
+    color: #ac41cc;
+    text-decoration: none;
+
+}

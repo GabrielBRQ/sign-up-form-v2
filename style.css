@@ -99,6 +99,19 @@ input:focus{
     transform: scale(1.1);
 }
 
+.toggle-password,
+.toggle-confirm-password {
+    background: none;
+    border: none;
+}
+  
+.toggle-password img,
+.toggle-confirm-password img {
+    height: 20px;
+    width: auto;
+    margin-left: 4px;
+}
+
 .myButton {
     background-color: rgba(150, 65, 204, 0);
     color: rgb(172,65,204);
@@ -142,3 +155,4 @@ a:visited {
         width: 100%;
     }
 }
+

@@ -31,10 +31,16 @@
                 <div class="input">
                     <label for="pwd"><img class="icon" src="img/icons/padlock.png" alt="password logo"></label>
                     <input type="password" id="pwd" name="pwd" required>
+                    <button class="toggle-password" type="button" onclick="togglePasswordVisibility('pwd')">
+                        <img class="icon" src="img/icons/eye.png" alt="eye icon">
+                    </button>
                 </div>
                 <div class="input">
-                    <label for="confirmpwd"><img class="icon" src="img/icons/padlock.png" alt="password logo"></label>
+                    <label for="confirmpwd"><img class="icon" src="img/icons/padlock.png" alt="password logo"></label>            
                     <input type="password" id="confirmpwd" name="confirmpwd" required onkeyup='check()'>
+                    <button class="toggle-confirm-password" type="button" onclick="toggleConfirmPasswordVisibility('confirmpwd')">
+                        <img class="icon" src="img/icons/eye.png" alt="eye icon">
+                    </button>
                 </div>
                 <p class="details">By signing up, you are agreeing to our <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></p>
                 <div class="submit">

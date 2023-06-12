@@ -38,10 +38,7 @@ p{
     height: 450px;
 }
 
-.container > .form{
-    left: 0;
-    opacity: 100%;
-}
+
 
 .container{
     background-color: rgba(0, 0, 0, 0.5);
@@ -66,17 +63,9 @@ p{
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-    transition: transform 200ms ease-in-out;
     padding: 6px;
+    transition: all 0.3s ease;
 }
-
-.details{
-    width: 20vw;
-    font-size: .8rem;
-    padding: 10px 0 15px 0;
-}
-
-
 
 .icon{
     margin-right: 10px;
@@ -95,8 +84,20 @@ input {
 input:focus{
     outline: none;
     border-color: #862e97;
+
 }
 
+.input input {
+    transition: all 0.3s ease; /* Adicionando transição suave */
+}
+
+.input input:active{
+    transform: scale(1.1);
+}
+
+.input:focus-within {
+    transform: scale(1.1);
+}
 
 .myButton {
     background-color: rgba(150, 65, 204, 0);
@@ -122,9 +123,22 @@ input:focus{
     
 }
 
+.details{
+    width: 20vw;
+    font-size: .8rem;
+    padding: 10px 0 15px 0;
+}
+
 a:link,
 a:visited {
     color: #ac41cc;
     text-decoration: none;
 
+}
+
+@media only screen and (max-width: 600px)  {
+    .background{
+        height: 100vh;
+        width: 100%;
+    }
 }

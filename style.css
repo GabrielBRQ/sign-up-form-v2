@@ -34,11 +34,9 @@ p{
 }
 
 .logo{
-    width: 450px;
-    height: 450px;
+    width: 35vw;
+    height: auto;
 }
-
-
 
 .container{
     background-color: rgba(0, 0, 0, 0.5);
@@ -54,30 +52,30 @@ p{
 }
 
 .title{
-    font-size: 3rem;
+    font-size: 3.8vw;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
 }
 
 .input {
     display: flex;
-    align-items: center;
     font-size: 1.1rem;
-    padding: 6px;
+    padding: .5vw;
     transition: all 0.3s ease;
 }
 
 .icon{
     margin-right: 10px;
-    height: 23px;
-    width: 23px;
+    height: 3.3vh;
+    width: auto;
 }
 
 input {
     border: 1px solid rgba(187, 187, 224, 0.5);
     background-color: rgba(187, 187, 224, 0);
-    border-radius: 5px;
-    height: 20px;
+    border-radius: .4vw;
+    height: 3vh;
+    width: 14vw;
     color: white;
 }
 
@@ -115,12 +113,13 @@ input:focus{
 .myButton {
     background-color: rgba(150, 65, 204, 0);
     color: rgb(172,65,204);
-    padding: 10px 24px 10px 24px;
+    padding: 1.5vh 24px 1.5vh 24px;
     border-style: none;
     border: 1px solid rgb(172,65,204);
-    border-radius: 5px;
-    width: 100%;
-    opacity: 70%;
+    border-radius: .4vw;
+    width: 20vw;
+    opacity: 85%;
+    font-size: 1vw;
     transition: all 0.3s;
 }
     
@@ -138,7 +137,7 @@ input:focus{
 
 .details{
     width: 20vw;
-    font-size: .8rem;
+    font-size: 1vw;
     padding: 10px 0 15px 0;
 }
 
@@ -149,10 +148,57 @@ a:visited {
 
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 768px)  {
+    .logo{
+        width: 50vw;
+        height: auto;
+    }
+
+    .container{
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 80vh;
+    }
+
+    input{
+        width: 30vw;
+        border-radius: 1.5vw;
+        height: 2.5vh;
+    }
+
+    .form{
+        margin-top: 0;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon{
+        margin-right: 5px;
+        height: 2.5vh;
+        width: auto;
+    }
+
+    .title{
+        font-size: 4.5vw;
+    }
+    
+    .myButton{
+        width: 40vw;
+        font-size: 3vw;
+        border-radius: 1.5vw;
+        padding: 1vh 24px 1vh 24px;
+    }
+
+    .details{
+        width: 40vw;
+        font-size: 2.5vw;
+        padding: 10px 0 15px 0;
+    }
+
     .background{
-        height: 100vh;
-        width: 100%;
+        content: url("img/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg");
     }
 }
 

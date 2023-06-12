@@ -86,7 +86,7 @@ input:focus{
 }
 
 .input input {
-    transition: all 0.3s ease; /* Adicionando transição suave */
+    transition: all 0.3s ease;
 }
 
 .input input:active{
